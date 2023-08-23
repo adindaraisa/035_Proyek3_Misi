@@ -1,11 +1,5 @@
 
-.box-one {
-    background-color:yellow;
-    height: 111px;
-    width: 375px;
-    border: 1px solid black;
-    padding: 10px; 
-}
+
 
 .grid-container {
     display: grid;
@@ -14,11 +8,12 @@
   }
   
 .grid-item {
+    display: flex;
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 100%;
     text-align: center;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
 }
 
