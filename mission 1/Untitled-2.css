@@ -1,0 +1,123 @@
+
+.box-one {
+    background-color:yellow;
+    height: 111px;
+    width: 375px;
+    border: 1px solid black;
+    padding: 10px; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 50px 50px 50px 50px 50px 50px 50px / auto auto auto auto auto;
+    padding: 0px;
+  }
+  
+.grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 100%;
+    text-align: center;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+#kuning {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: yellow;
+}
+
+#hitam {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: black;
+}
+
+#hijau {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: green;
+}
+
+#merah {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: red;
+}
+
+#birutua {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    background-color:darkblue;
+}
+
+#coklat {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color:brown;
+}
+
+#putih {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color:white;
+}
+
+#pink {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color:pink;
+}
+
+#biru {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color:blue;
+}
+
+#abu {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    background-color:grey;
+}
+
+#orange {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color:orange;
+}
+
+#ungu {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 7;
+    background-color:purple;
+}
+
+.primarytext{
+    color: white
+}
