@@ -1,9 +1,11 @@
 
-
+.item1{grid-area: lu;}
 
 .grid-container {
     display: grid;
-    grid-template-areas: 50px 50px 50px 50px 50px 50px 50px / auto auto auto auto auto;
+    /* grid-template-areas: ; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     padding: 0px;
   }
   
