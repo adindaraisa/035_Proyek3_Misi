@@ -3,7 +3,7 @@
 
 .grid-container {
     display: grid;
-    /* grid-template-areas: ; */
+    height:100vh;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
     padding: 0px;
@@ -13,7 +13,7 @@
     display: flex;
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
-    font-size: 100%;
+    font-size: 200%;
     text-align: center;
     align-items: center;
     justify-content: center;
