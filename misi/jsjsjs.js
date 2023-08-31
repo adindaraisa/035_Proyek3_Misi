@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     { id: 2, name: "User 2", username: "user2", isFollowed: false },
     { id: 3, name: "User 3", username: "user3", isFollowed: false },
     { id: 4, name: "User 4", username: "user4", isFollowed: false },
+    { id: 5, name: "User 5", username: "user5", isFollowed: false },
     // Add more users here
   ];
 
@@ -14,26 +15,27 @@ document.addEventListener("DOMContentLoaded", function () {
     const usersContainer = document.querySelector(".users");
     usersContainer.innerHTML = "";
 
-    const myFriends = users.filter((user) => user.isFollowed);
-    myFriends.forEach((user) => {
-      const userElement = createUserElement(user, "unfollow-btn");
-      myFriendsContainer.appendChild(userElement);
+    users.forEach((user) => {
+      if (!user.isFollowed) {
+        const userElement = createUserElement(user, "follow-btn");
+        usersContainer.appendChild(userElement);
+      }
     });
-
-    const myFriendsHeader = document.querySelector(".my-friends h2");
-    myFriendsHeader.textContent = `My Friends (${myFriends.length})`;
   }
 
   // Function to render My Friends
   function renderMyFriends() {
     myFriendsContainer.innerHTML = "";
 
-    users.forEach((user) => {
-      if (user.isFollowed) {
-        const userElement = createUserElement(user, "unfollow-btn");
-        myFriendsContainer.appendChild(userElement);
-      }
+    const myFriends = users.filter((user) => user.isFollowed);
+    myFriends.forEach((user) => {
+      const userElement = createUserElement(user, "unfollow-btn");
+      myFriendsContainer.appendChild(userElement);
     });
+
+  const myFriendsHeader = document.querySelector(".my-friends h2");
+  myFriendsHeader.textContent = `My Friends (${myFriends.length})`;
+
   }
 
   // Function to create user element
@@ -44,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const table = document.createElement("table");
     table.innerHTML = `
         <tr>
-            <td rowspan="2"><img src="user-image-placeholder.png" class="user-image"></td>
+            <td rowspan="2"><img src="bg.jpg" class="user-image"></td>
             <td><span class="user-name">${user.name}</span></td>
         </tr>
             <td><span class="user-username">@${user.username}</span></td>
